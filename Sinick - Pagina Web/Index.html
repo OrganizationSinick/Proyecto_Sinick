@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--===============================================================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--===============================================================================================-->
+    <meta name="viewport" content="width=device-width, initial - scale=1">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="Styles/Stylo.css" type="text/css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="Image/Sin_título-removebg-preview.png"/>
+    <!--===============================================================================================-->
+    <link rel="preconecte" href="https://fonts.gstatic.com">
+    <!--===============================================================================================-->
+    <link href="https://fonts.googleapis.com/css2? familia,Kaushan+Script&amapolas: 
+    ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,0,0,0,0 900;1,100;1,200;1,300;1,400;1,500;1,600;1,
+    700;1,800;1,900&display-swap" rel="stylesheet">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="Styles/jquery.convform.css">
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="JS/jquery-3.1.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="JS/jquery.convform.js"></script>
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="JS/custom.js"></script>
+    <!--===============================================================================================-->
+    <title>SINICK</title>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <!--Chat Boot-->
+    <div class="chat_icon">    
+        <a href="convForm-master/index.html"><i class="fa fa-comments" aria-hidden="true"></i></a>
+    </div>
+    
+    <section id="Ini">
+        <nav class="navbar">
+            <div class="content">
+                <img src="Image/Logo 3.png" class="logo" alt="Logo">
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+                </div>
+                <li><a href="#Ini">Inicio</a></li>
+                <li><a href="#feature">Nosotros</a></li>
+                <li><a href="#gal">Galeria</a></li>
+                <li><a href="#test">Testimonios</a></li>
+                <li><a href="#equi">Integrantes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            </div>
+        </nav>
+
+
+        <div class="banner">
+            <div class="banner-text">
+                <h1 class="animate__animated animate__backInRight">SINICK</h1>
+                <p>Una Nueva generación para mejorar la calidad</p>
+                <div class="banner-btn">
+                    <a href="Datos/login-user.php"><span></span>Iniciar Sesion</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="about"></div>
+        
+        <script>
+            const body = document.querySelector("body");
+            const navbar = document.querySelector(".navbar");
+            const menu = document.querySelector(".menu-list");
+            const menuBtn = document.querySelector(".menu-btn");
+            const cancelBtn = document.querySelector(".cancel-btn");
+            menuBtn.onclick = ()=>{
+            menu.classList.add("active");
+            menuBtn.classList.add("hide");
+            cancelBtn.classList.add("show");
+            body.classList.add("disabledScroll");
+            }
+            cancelBtn.onclick = ()=>{
+            menu.classList.remove("active");
+            menuBtn.classList.remove("hide");
+            cancelBtn.classList.remove("show");
+            body.classList.remove("disabledScroll");
+            }
+        
+            window.onscroll = ()=>{
+            this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            }
+        </script>
+    </section>
+
+    <!--Nosotros-->
+
+    <section id="feature">
+
+        <div class="title-text">
+            <p>NOSOTROS</p>
+            <h1>Sobre Nosotros</h1>
+        </div>
+
+        <div class="feature-box">
+            <div class="features">
+                <h1>Diseño</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-shield"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>
+                            Diseñar una interfaz libre para que los usuarios e instructores tengan un manejo 
+                            mas facil y eficaz.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <h1>Introducción</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-check-square-o"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>
+                            Realizar y mejorar la plataforma con un buen desarrollo con una gran respuesta
+                             hacia el usuario.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <h1>Mejor forma toma de asistencia</h1>
+                <div class="features-desc">
+                    <div class="feature-icon">
+                        <i class="fa fa-inr"></i>
+                    </div>
+                    <div class="feature-text">
+                        <p>
+                            Facilitar y agilizar el tiempo para la toma de asistencia, utilizaremos este 
+                            software para que el instructor no le tome tanto tiempo.
+                        </p>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <div class="features-img">
+                <img src="Image/pexels-august-de-richelieu-4260477.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Galeria-->
+    
+    <section id="gal">
+        <section class="galeria">
+            <div class="title-text">
+                <p>GALERIA</p>
+                <h1>Fotos</h1>
+            </div>
+            <div class="galeria-box">
+                <div class="single-galeria">
+                    <img src="Image/Galeria (1).jpg" alt="">
+                    <div class="efecto"></div>
+                    <div class="galeria-desc">
+                        <h3>Diseño</h3>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, 
+                            possimus iure! Debitis voluptates atque sapiente obcaecati
+                        </p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <img src="Image/Galeria 1.jpg" alt="">
+                    <div class="efecto"></div>
+                    <div class="galeria-desc">
+                        <h3>Manejo</h3>
+                        <hr>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, 
+                            possimus iure! Debitis voluptates atque sapiente obcaecati
+                        </p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <img src="Image/Galeria 3.jpg" alt="">
+                    <div class="efecto"></div>
+                    <div class="galeria-desc">
+                        <h3>Innovacion</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, 
+                            possimus iure! Debitis voluptates atque sapiente obcaecati</p>
+                    </div>
+                </div>
+                <div class="single-galeria">
+                    <img src="Image/Galeria (2).jpg" alt="">
+                    <div class="efecto"></div>
+                    <div class="galeria-desc">
+                        <h3>Puntualidad</h3>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, 
+                            possimus iure! Debitis voluptates atque sapiente obcaecati</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!--Testimonios-->
+    
+    <section id="test" class="testimonios">
+        <section class="testimonial">
+            <div class="title-text">
+                <p>TESTIMONIAL</p>
+                <h1>Testimonios</h1>
+            </div>
+            <div class="testimonials-carousel-wrap">
+                <div class="testimonials-carousel">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="Image/img-3.jpg"></div>
+                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                            1500s, when an unknown printer took a galley of type and scrambled it to 
+                                            make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                        <div class="testimonials-avatar">
+                                            <h3>John Doe</h3>
+                                            <h4>Owner</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                                </div>
+                            </div>
+        
+                            <!--second--->
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="Image/img-1.jpg"></div>
+                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                            1500s, when an unknown printer took a galley of type and scrambled it to 
+                                            make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                        <div class="testimonials-avatar">
+                                            <h3>Doe Boe</h3>
+                                            <h4>Director</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                                </div>
+                            </div>
+                            <!--third-->
+        
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="Image/img-2.jpg"></div>
+                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                            1500s, when an unknown printer took a galley of type and scrambled it to 
+                                            make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                        <div class="testimonials-avatar">
+                                            <h3>Boe Doe</h3>
+                                            <h4>Developer</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                                </div>
+                            </div>
+        
+                            <!--fourth-->
+                            <div class="swiper-slide">
+                                <div class="testi-item">
+                                    <div class="testi-avatar"><img src="Image/pexels-ali-pazani-2787341.jpg"></div>
+                                    <div class="testimonials-text-before"><i class="fa fa-quote-right"></i></div>
+                                    <div class="testimonials-text">
+                                        <div class="listing-rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                        <p>
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                                            Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                            1500s, when an unknown printer took a galley of type and scrambled it to 
+                                            make a type specimen book.
+                                        </p>
+                                        <a href="#" class="text-link"></a>
+                                        <div class="testimonials-avatar">
+                                            <h3>Doe John</h3>
+                                            <h4>Designer</h4>
+                                        </div>
+                                    </div>
+                                    <div class="testimonials-text-after"><i class="fa fa-quote-left"></i></div> 
+                                </div>
+                            </div>
+                            <!--testi end-->
+        
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="JS/scripts.js"></script>
+
+    <!--Equipo-->
+        
+    <section id="equi">    
+        <section class="galeria">
+            <div class="title-text">
+                <p>EQUIPO</p>
+                <h1>Integrantes</h1>
+            </div>
+            <section class="card">
+                <div class="contenedor">
+                    <article class="card__columna">
+                        <div class="linea"></div>
+                        <div class="todo">
+                            <img src="Image/Dayanna.jpeg">
+                            <p class="nombre"><a href="dayana.html">DAYANNA BAYONA</a></p>
+                            <p class="profesion">Diseñador Web</p>
+                        </div>
+                    </article>
+
+                    <article class="card__columna">
+                        <div class="linea"></div>
+                        <div class="todo">
+                            <img src="Image/Nixson.jpg">
+                            <p class="nombre"><a href="nixson.html">NIXSON PINZON</a></p>
+                            <p class="profesion">Diseñador Web</p>
+                        </div>
+                    </article>
+
+                    <article class="card__columna">
+                        <div class="linea"></div>
+                        <div class="todo">
+                            <img src="Image/David.jpeg">
+                            <p class="nombre"><a href="david.html">DAVID ALBA</a></p>
+                            <p class="profesion">Diseñador Web</p>
+                        </div>
+                    </article>
+
+                    <article class="card__columna">
+                        <div class="linea"></div>
+                        <div class="todo">
+                            <img src="Image/WhatsApp Image 2021-02-09 at 2.34.27 PM.jpeg">
+                            <p class="nombre"><a href="luan.html">LUAN MONTES</a></p>
+                            <p class="profesion">Diseñador Web</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+    </section>
+    
+    
+
+
+    <!--Footer-->
+
+    <footer>
+
+        <div class="container-footer-all">
+
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>Mas informacion de la compañia</h1>
+
+                    <p>
+                        Esta compañia se dedica a la venta de software integrado con un conjunto de 
+                        cosas que no se lo que estoy escribiendo, este texto es solo para llenara informacion 
+                        en el cuadro de informacion de la compañia.
+                    </p>
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Redes Sociales</h1>
+
+                    <div class="row">
+                        <a href="https://www.facebook.com/SinicKSoftware/"><img src="Image/facebook.png"></a>
+                        <label>Siguenos en Facebook</label>
+                    </div>
+                    <div class="row">
+                        <a href="https://twitter.com/Sinick12Sinick"><img src="Image/twitter.png"></a>
+                        <label>Siguenos en Twitter</label>
+                    </div>
+                    <div class="row">
+                        <a href="https://www.instagram.com/sinick1/"><img src="Image/instagram.png"></a>
+                        <label>Siguenos en Instagram</label>
+                    </div>
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Informacion Contactos</h1>
+
+                    <div class="row2">
+                        <a href="https://goo.gl/maps/bV21AHaNjezJVHoA6"><img src="Image/house.png"></a>
+                        <label>Carrera 3B Este # 47B - 08 Sur</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="Image/smartphone.png">
+                        <label>+57 3134982492</label>
+                    </div>
+
+                    <div class="row2">
+                        <a href="mailto:pinzon0930@gmail.com"><img src="Image/contact.png"></a>
+                        <label>pinzon0930@gmil.com</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-footer">
+            <div class="footer">
+                <div class="copyright">
+                    © 2021 Todos los Derechos Reservados | <a href="">SINICK</a>
+                </div>
+
+                <div class="page">
+                    <a href="#" class="boton" id="btnabrir">Terminos y Condiciones</a>
+                </div>
+                <div class="fondo_transparente">
+                    <div class="modal">
+                        <div class="modal_cerrar">
+                            <span></span>
+                        </div>
+                        <div class="modal_titulo">TERMINOS Y CONDICIONES</div>
+                        <div class="modal_mensaje">
+                            <p>Términos y Condiciones de Uso
+                                
+                                Es requisito necesario para la adquisición de los productos 
+                                que se ofrecen en este sitio, que lea y acepte los siguientes Términos y 
+                                Condiciones que a continuación se redactan. El uso de nuestros servicios así 
+                                como la compra de nuestros productos implicará que usted ha leído y aceptado 
+                                los Términos y Condiciones de Uso en el presente documento.
+                            </p>
+                        </div>
+                        <div class="modal_botones">
+                            <a href="" class="boton">CERRAR</a>
+                            <a href="" class="boton">ACEPTAR</a>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById("btnabrir").addEventListener("click",function(){
+                       document.getElementsByClassName("fondo_transparente")[0].style.display="block" 
+                       return false
+                    })
+                    document.getElementsByClassName("modal_cerrar")[0].addEventListener("click",function(){
+                        document.getElementsByClassName("fondo_transparente")[0].style.display="none" 
+                    })
+                </script>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
